@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+  <title>PM Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="back">
+  <header>
+    <h1 id="title">Property Management App Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <div class="container">
+
+  <!-- Form -->
+  <form action="" id="survey-form">
+    <!-- Main info -->
+    <div class="main-info">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+    <label for="number" id="number-label">Number of units managed:</label>
+    <input type="number" id="number" name="number" min="0" max="10000" placeholder="Units">
+    <br>
+    </div>
+    <!-- Dropdown -->
+    <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+
+    <select name="dropdown" id="dropdown">
+      <option value="landlord">Landlord</option>
+      <option value="manager">Manager</option>
+      <option value="tenant">Tenant</option>
+    </select>
+
+    <!-- radio -->
+    <fieldset>
+      <legend>Would you recomend the Property Management App to a friend?</legend>
+      <input id="def" type="radio" name="recommend" value="def">
+      <label for="def">Definitely</label><br>
+      <input id="maybe" type="radio" name="recommend" value="maybe">
+      <label for="maybe">Maybe</label><br>
+      <input id="Not sure" type="radio" name="recommend" value="Not sure">
+      <label for="Not sure">Not sure</label>
+    </fieldset>
+
+    <!-- Checkboxes -->
+    <p id="units-label">What type of units do you have? <span>(Check all that apply)</span></p>
+    <label for="single"><input id="single" type="checkbox" name="typeOfUnit" value="single"> Single-family homes</label><br>
+    <label for="multi"><input id="multi" type="checkbox" name="typeOfUnit" value="multi"> Multi-family homes</label><br>
+    <label for="condos"><input id="condos" type="checkbox" name="typeOfUnit" value="condos"> Condos</label><br>
+    <label for="luxury"><input id="luxury" type="checkbox" name="typeOfUnit" value="luxury"> Luxury Homes</label><br>
+    <label for="vacation"><input id="vacation" type="checkbox" name="typeOfUnit" value="vacation"> Vacation Homes</label><br>
+    <label for="getaway"><input id="getaway" type="checkbox" name="typeOfUnit" value="getaway"> Getaway homes</label>
+    <br>
+
+    <!-- Comments -->
+    <label for="comments" id="comments-label">Any comments or suggestions?</label> <br>
+    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your suggestions"></textarea>
+    <br>
+    <!-- submit -->
+    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
+  <!-- Scripts -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

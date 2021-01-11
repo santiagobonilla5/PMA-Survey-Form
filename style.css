@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', monospace;
+  background: url('./images/luxury-re.jpg') no-repeat center center/cover;
+  color: var(--gunmetal);
+}
+.back {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+}
+
+.container {
+  width: 60vw;
+  text-align: justify;
+  background-color: var(--light-cyan);
+  padding: 20px 4%;
+  border-radius: 20px;
+}
+
+/* variables */
+:root {
+  --gunmetal: #253237;
+  --cadet: #5c6b73;
+  --pewter: rgba(157, 180, 192, 0.8);
+  --powder: #c2dfe3;
+  --light-cyan: rgba(224, 251, 252, 0.7);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#description {
+  text-align: center;
+  color: white;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+legend,
+#units-label,
+#comments-label {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.main-info input,
+#dropdown,
+textarea {
+  border-radius: 4px;
+}
